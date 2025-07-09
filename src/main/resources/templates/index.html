@@ -27,11 +27,11 @@
 <body>
 
     <div class="container">
-        <h1>Bem-vindo, <span th:text="${nome != '' ? nome : 'visitante'}"></span>!</h1>
+        <h1>Bem-vindo, <span th:text="${name != '' ? name : 'visitante'}"></span>!</h1>
         <p>Estamos felizes em ter você aqui.</p>
     </div>
     <div class="mt-4">
-                <a th:href="@{/logout}" class="btn btn-danger">Sair</a>
+                <a th:href="@{/sair}" class="btn btn-danger">Sair</a>
             </div>
 
     <!-- Bootstrap JS -->
