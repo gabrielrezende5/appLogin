@@ -9,6 +9,8 @@ public interface UsuarioRepository extends CrudRepository<Usuario, String> {
 	
 	Usuario findById(long id);
 	
+	Usuario findByEmail(String email);
+	
 	@Query(value="select * from applogin.usuario where email = :email and password = :password", nativeQuery = true)
 	public Usuario login(String email, String password);
 	
